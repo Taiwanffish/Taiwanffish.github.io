@@ -34,7 +34,7 @@ h1 {
     position: relative;
     display: block;
     border: 5px solid #3d3d3d;
-    padding: 20px;
+    padding: 10px ;
     text-align: center;
     margin: 30px 0;
     font-family: Microsoft JhengHei;
@@ -45,17 +45,52 @@ h1 {
     font-size: 18px;
     letter-spacing: 4px;
     transition: all 0.5s;
+    text-transform: uppercase;
+    overflow:hidden;
 }
+
+    .button span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: #A6FFFF;
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+
+    .button:hover,
+    .button:focus{
+        color: black
+    }
+     .button:hover span {
+    transform: translateY(0) scale(2);
+}
+    .button span:nth-child(1) {
+        --n: 1;
+}
+    .button span:nth-child(2) {
+        --n: 2;
+    }
+    .button span:nth-child(3) {
+        --n: 3;
+    }
+    .button span:nth-child(4) {
+        --n: 4;
+    }
 
 
 .button:hover {
     transform: scale(1.2);
 }
-.icon{
+.ig{
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 20px;
-    width: 60px;
+    width: 50px;
     animation-name: zoom-in;
     animation-duration: 0.5s;
     animation-direction: alternate;
@@ -63,29 +98,13 @@ h1 {
 }
 .FB {
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 20px;
-    width: 60px;
+    width: 40px;
     animation-name: zoom-in;
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-}
-
-.top {
-    display: block;
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 16px;
-    box-sizing: border-box;
-    border: 1px solid #3d3d3d;
-    font-family: Microsoft JhengHei;
 }
 .works {
     position: relative;
@@ -108,8 +127,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
@@ -123,8 +142,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
@@ -138,8 +157,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
@@ -154,8 +173,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
@@ -170,8 +189,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
@@ -186,8 +205,8 @@ h1 {
     width: 50%;
     color: #fff;
     font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
     transition: all .5s;
     opacity: 0;
 }
